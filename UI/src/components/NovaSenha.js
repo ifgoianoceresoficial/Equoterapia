@@ -31,36 +31,40 @@ const ResetPassword = () => {
           Insira sua nova senha abaixo.
         </p>
         <form onSubmit={handleSubmit} className="w-75 mt-3">
-          <div className="mb-3 text-start w-100 position-relative">
+          <div className="mb-3 text-start w-100">
             <label htmlFor="newPassword" className="form-label">
               Nova Senha
             </label>
-            <input
-              type={showPassword ? "text" : "password"}
-              id="newPassword"
-              className="form-control input-field"
-              placeholder="Digite sua nova senha"
-            />
-            <span className="eye-icon" onClick={togglePasswordVisibility}>
-              {showPassword ? <FaEyeSlash /> : <FaEye />}
-            </span>
+            <div className="position-relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="newPassword"
+                className="form-control input-field"
+                placeholder="Digite sua nova senha"
+              />
+              <span className="eye-icon" onClick={togglePasswordVisibility}>
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
           </div>
-          <div className="mb-3 text-start w-100 position-relative">
+          <div className="mb-3 text-start w-100">
             <label htmlFor="confirmPassword" className="form-label">
               Confirmar Nova Senha
             </label>
-            <input
-              type={showConfirmPassword ? "text" : "password"}
-              id="confirmPassword"
-              className="form-control input-field"
-              placeholder="Confirme sua nova senha"
-            />
-            <span
-              className="eye-icon"
-              onClick={toggleConfirmPasswordVisibility}
-            >
-              {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
-            </span>
+            <div className="position-relative">
+              <input
+                type={showConfirmPassword ? "text" : "password"}
+                id="confirmPassword"
+                className="form-control input-field"
+                placeholder="Confirme sua nova senha"
+              />
+              <span
+                className="eye-icon"
+                onClick={toggleConfirmPasswordVisibility}
+              >
+                {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
           </div>
           <br />
           <button type="submit" className="btn btn-primary w-100 rounded-pill">

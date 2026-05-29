@@ -104,24 +104,26 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-3 text-start w-100 position-relative">
+          <div className="mb-3 text-start w-100">
             <label htmlFor="password" className="form-label">
               Senha
             </label>
-            <input
-              type={showPassword ? "text" : "password"}
-              id="password"
-              name="password"
-              autoComplete="current-password"
-              className="form-control input-field pr-5"
-              placeholder="Digite sua senha"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-            <span className="eye-icon" onClick={togglePasswordVisibility}>
-              {showPassword ? <FaEyeSlash /> : <FaEye />}
-            </span>
+            <div className="position-relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                autoComplete="current-password"
+                className="form-control input-field pr-5"
+                placeholder="Digite sua senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <span className="eye-icon" onClick={togglePasswordVisibility}>
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
           </div>
           <div className="text-end mb-3">
             <Link to="/esqueceu-senha" className="btn btn-link">
