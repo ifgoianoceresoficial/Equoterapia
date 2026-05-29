@@ -1,0 +1,71 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.agenda-equitador{
+    color: #4E3B31;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.btnCad{
+    background-color: #07C158 !important;
+    border-radius: 5px;
+    border-width: 0px;
+    color: #FAFAFA !important;
+    min-width: 120px;
+}
+
+.th {
+    text-align: center;
+    font-size: 16px;
+    background-color: #FAFAFA !important;
+    color: #000000;
+}
+
+.sub {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.session-cell {
+    background-color: #30D0CA !important;
+    color: #FAFAFA !important;
+}
+
+.empty-cell {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+.tb{
+    border-radius: 10px;
+    border: 1px solid #B3B5B6;
+}
+
+@media (max-width: 768px) {
+
+    /* Ajuste do título da agenda em telas muito pequenas */
+    .agenda {
+        font-size: 18px;
+    }
+
+    /* Ajuste ainda mais nas células da tabela para telas pequenas */
+    .session-cell,
+    .empty-cell {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .th {
+        font-size: 10px;
+    }
+
+    /* Ajustar a exibição de "Novo Agendamento" */
+    .btnCad {
+        min-width: 100%;
+        /* Botão ocupa 100% da largura */
+        font-size: 14px;
+        /* Reduzir o tamanho da fonte do botão */
+    }
+}

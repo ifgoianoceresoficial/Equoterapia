@@ -1,0 +1,133 @@
+.container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4E3B31; 
+  margin-bottom: 20px;
+  margin-top: 1.5em;
+}
+
+.btn-active{
+  background-color: #4E3B31!important;
+  color: white!important;
+}
+
+.btn-outline-secondary{
+  color: black!important;
+  background-color: white!important;
+  border: 1px solid black!important;
+}
+
+
+.listar-equinos-searchbar .search-icon{
+  background-color: #4E3B31;
+}
+
+
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.button-filter {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ccc;
+  width: 192px;
+  height: 40px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.button-filter.active {
+  background-color: #4E3B31; 
+}
+
+.button-add {
+  padding: 10px 25px;
+  background-color: #4E3B31;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+  
+
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #8d8d8d;
+  margin-top: 0;
+}
+
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.info {
+  display: flex; 
+  justify-content: space-between; 
+  flex-grow: 1; 
+  padding: 0 10px;
+  font-size: 14px;
+  margin-right: 20%;
+}
+
+.text {
+  margin: 0;
+}
+
+.status {
+  margin-right: 20px;
+}
+
+.status-text {
+  color: #4E3B31; 
+  font-weight: bold;
+}
+
+.action-button {
+  background-color: #ddd;
+  color: #4E3B31; 
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.action-button:hover {
+  background-color: #bbb;
+}
+
+
+
+  

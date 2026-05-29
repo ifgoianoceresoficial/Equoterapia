@@ -1,0 +1,35 @@
+/* App.css */
+.app-content {
+    display: flex;
+    height: 100vh;
+    overflow-x: auto;
+    /* Habilita rolagem horizontal se a tela for estreita demais */
+}
+
+.sidebar {
+    width: 300px;
+    min-height: 100vh;
+    /* Define a sidebar como um tamanho fixo mínimo */
+    background-color: #f8f9fa;
+}
+
+.content {
+    flex: 1;
+    min-width: 500px;
+    /* Define a largura mínima do conteúdo para evitar que encoste na sidebar */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Opção adicional: ajuste para telas bem pequenas */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .content {
+        min-width: 500px;
+        /* Largura mínima do conteúdo em telas menores */
+    }
+}

@@ -1,0 +1,86 @@
+/* Cor do título principal (verde original) */
+.agendamento {
+    color: #07C158;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Estilo dos botões */
+.btnB,
+.btnA {
+    border-radius: 5px;
+    border-width: 0px;
+    color: #FAFAFA !important;
+    margin-top: 10px;
+    min-width: 120px;
+    transition: background-color 0.2s;
+}
+
+/* Botão Cancelar (azul original) */
+.btnB {
+    background-color: #032437 !important;
+}
+
+/* Botão Confirmar (verde original) */
+.btnA {
+    background-color: #07C158 !important;
+}
+
+.btnA:hover {
+    background-color: #06a54b !important;
+    /* Um tom de verde um pouco mais escuro */
+}
+
+.form {
+    color: #193238;
+    font-weight: 500;
+}
+
+/* Estilos para o Card de Resumo */
+.summary-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 25px;
+    height: fit-content;
+    margin-top: 38px;
+}
+
+.summary-card h4 {
+    color: #07C158;
+    /* Título do card em verde */
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.summary-item {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.summary-item strong {
+    color: #333;
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 767px) {
+    .summary-card {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .btnB,
+    .btnA {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .agendamento {
+        font-size: 20px;
+    }
+}

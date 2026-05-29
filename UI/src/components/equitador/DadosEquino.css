@@ -1,0 +1,118 @@
+/* Container principal da página */
+.details-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho com imagem, nome e botão */
+.details-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.header-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e9ecef;
+}
+
+.header-info {
+    flex-grow: 1;
+}
+
+.header-info h2 {
+    color: #343a40;
+    font-weight: 600;
+    margin: 0;
+}
+
+.header-info p {
+    color: #6c757d;
+    margin: 5px 0 15px 0;
+}
+
+/* Botão de ação principal (Editar) */
+.action-button {
+    background-color: #4E3B31 !important;
+    /* ALTERADO PARA MARROM */
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.action-button:hover {
+    background-color: #3a2d25 !important;
+    /* ALTERADO PARA MARROM MAIS ESCURO */
+}
+
+/* Card de informações */
+.info-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.info-card-title {
+    color: #4E3B31;
+    /* ALTERADO PARA MARROM */
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Grid para alinhar os dados */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-size: 16px;
+    color: #212529;
+}
+
+/* Estados de loading e erro */
+.loading-container,
+.error-container {
+    padding: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.error-container {
+    color: #d9534f;
+}

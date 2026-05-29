@@ -1,0 +1,48 @@
+import React from 'react';
+
+const BotaoEfeito = ({ texto, ativo, onClick }) => {
+  const styles = {
+    button: {
+      backgroundColor: 'transparent',
+      border: 'none',
+      color: ativo ? '#07C158' : 'black',
+      fontSize: '18px',
+      cursor: 'pointer',
+      padding: '5px 10px',
+      textDecoration: 'none',
+      borderBottom: ativo ? '2px solid #07C158' : '2px solid transparent',
+      transition: 'all 0.3s ease',
+    },
+    buttonHover: {
+      borderBottom: '2px solid #07C158',
+      color: '#07C158',
+    },
+  };
+
+  const handleMouseOver = (e) => {
+    if (!ativo) {
+      e.target.style.borderBottom = styles.buttonHover.borderBottom;
+      e.target.style.color = styles.buttonHover.color;
+    }
+  };
+
+  const handleMouseOut = (e) => {
+    if (!ativo) {
+      e.target.style.borderBottom = styles.button.borderBottom;
+      e.target.style.color = styles.button.color;
+    }
+  };
+
+  return (
+    <button
+      style={styles.button}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      onClick={onClick}
+    >
+      {texto}
+    </button>
+  );
+};
+
+export default BotaoEfeito;

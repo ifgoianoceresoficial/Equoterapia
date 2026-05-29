@@ -1,0 +1,168 @@
+.cadastro-title {
+    color: #00A335 !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.section-title {
+    color: #00A335 !important;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cadastro-form {
+    color: #193238;
+}
+
+.input-field {
+    border: 1px solid #B3B5B6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: white;
+    height: 40px;
+}
+
+.input-field::placeholder {
+    color: #B3B5B6;
+    font-size: 14px;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.foto-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #FAFAFA;
+    border: 2px dashed #B3B5B6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.plus-icon {
+    font-size: 24px;
+    color: #00A335 !important;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00A335 !important;
+}
+
+.responsavel-wrapper {
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-cancelar {
+    background-color: #032437;
+    border: none;
+    color: #FAFAFA;
+    padding: 8px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    min-width: 120px;
+}
+
+.btn-avancar {
+    background-color: #00A335 !important;
+    border: none;
+    color: #FAFAFA;
+    padding: 8px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    min-width: 120px;
+}
+
+textarea.input-field {
+    height: auto;
+    min-height: 100px;
+}
+
+.form-select {
+    height: 40px;
+    background-color: #FAFAFA;
+}
+
+.foto-placeholder {
+    width: 120px;
+    /* tamanho do círculo */
+    height: 120px;
+    border-radius: 50%;
+    /* deixa circular */
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* garante que a imagem não "escape" */
+    cursor: pointer;
+    position: relative;
+}
+
+.plus-icon {
+    font-size: 2rem;
+    color: #777;
+}
+
+.foto-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* faz a imagem se ajustar ao círculo */
+    border-radius: 50%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cadastroPraticante-title {
+        font-size: 20px;
+    }
+
+    .sectionPraticante-title {
+        font-size: 14px;
+    }
+
+    .foto-placeholder {
+        width: 60px;
+        height: 60px;
+        margin: 20px 0;
+    }
+
+    .btn-cancelar,
+    .btn-avancar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .responsavel-wrapper {
+        padding: 15px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    .input-field::placeholder {
+        font-size: 12px;
+    }
+}

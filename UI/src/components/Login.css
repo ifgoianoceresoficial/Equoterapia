@@ -1,0 +1,127 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#username {
+    border: 1px solid rgb(184, 181, 181);
+}
+
+#password {
+    border: 1px solid rgb(184, 181, 181);
+}
+
+#user {
+    border: 1px solid rgb(184, 181, 181);
+}
+
+#code {
+    border: 1px solid rgb(184, 181, 181);
+}
+
+#texto {
+    color: gray;
+}
+
+#newPassword {
+    border: 1px solid rgb(184, 181, 181);
+}
+
+#confirmPassword {
+    border: 1px solid rgb(184, 181, 181);
+}
+
+.login-form h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+
+}
+
+.input-field {
+    height: 50px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-left: none;
+    cursor: pointer;
+}
+
+.input-group-text i {
+    color: #07C158;
+}
+
+.btn-primary {
+    background-color: #07C158;
+    border-color: #07C158;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #06a348;
+    border-color: #06a348;
+}
+
+.btn-link {
+    color: #07C158;
+    font-size: 0.9rem;
+}
+
+.btn-link:hover {
+    color: #06a348;
+    text-decoration: underline;
+}
+
+.login-image {
+    background-image: url('./imgs/equo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 60%;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    font-size: 1.25rem;
+    color: #07C158;
+    cursor: pointer;
+}
+
+.eye-icon:hover {
+    color: #05a34d;
+}

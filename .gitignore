@@ -1,0 +1,29 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# Build directories
+target/
+**/target/
+build/
+**/build/
+out/
+**/out/
+
+# Dependency directories
+node_modules/
+**/node_modules/
+
+# Logs and databases
+*.log
+*.sqlite

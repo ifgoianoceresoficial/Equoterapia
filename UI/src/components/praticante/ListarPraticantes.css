@@ -1,0 +1,54 @@
+.listar-praticantes-container {
+  margin-left: 30px;
+  transform: scale(0.9);
+  transform-origin: top left;
+}
+
+.img-perfil{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.conteudo-lista{
+  margin-top: 30px;
+}
+
+.cor-padrao-praticante{
+    color: #07C158;
+  }
+.cor-padrao-btn-praticante{
+    background-color: #07C158;
+    color: #fff;
+    border: none;
+  }
+  .cor-padrao-btn-praticante-arquivado{
+    background-color: #9B2D20;
+    color: #fff;
+    border: none;
+  }
+  .cor-padrao-btn-praticante:hover{
+    background-color: #07C158;
+    color: #fff;
+    border: none;
+  }
+  .menu button {
+    text-align: left;
+  }
+  
+  .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .bg-praticante{
+    background-color: #f8f9fa;
+  }
+  .list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  
