@@ -1,0 +1,12 @@
+{
+  "name": "equoterapia-e2e-tests",
+  "version": "1.0.0",
+  "description": "Testes de Integração End-to-End para a aplicação Equoterapia usando Playwright",
+  "main": "e2e-multi-profile.js",
+  "scripts": {
+    "test": "node e2e-multi-profile.js"
+  },
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}
