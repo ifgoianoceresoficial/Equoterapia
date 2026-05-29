@@ -54,7 +54,7 @@ class HorseTest {
         when(horseService.findAll()).thenReturn(List.of(horse));
 
         // Chama o método do resource e armazena a resposta
-        ResponseEntity<List<Horse>> response = horseResource.findAll();
+        ResponseEntity<List<Horse>> response = horseResource.findAll(null);
 
         // Verifica se o status HTTP é 200 (OK)
         assertEquals(200, response.getStatusCode().value());
