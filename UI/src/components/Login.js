@@ -94,6 +94,9 @@ const Login = () => {
             <input
               type="text"
               id="username"
+              name="username"
+              autoComplete="username"
+              spellCheck={false}
               className="form-control input-field"
               placeholder="Digite seu usuário"
               value={username}
@@ -108,6 +111,8 @@ const Login = () => {
             <input
               type={showPassword ? "text" : "password"}
               id="password"
+              name="password"
+              autoComplete="current-password"
               className="form-control input-field pr-5"
               placeholder="Digite sua senha"
               value={password}

@@ -1,58 +1,60 @@
 .login-container {
     height: 100vh;
     display: flex;
+    background: var(--bg-gradient);
+    overflow: hidden;
 }
 
 .login-form {
-    background-color: white;
-    padding: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-right: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    padding: 3.5rem 4rem;
     text-align: center;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: var(--transition-smooth);
+    z-index: 10;
 }
 
-#username {
-    border: 1px solid rgb(184, 181, 181);
-}
-
-#password {
-    border: 1px solid rgb(184, 181, 181);
-}
-
-#user {
-    border: 1px solid rgb(184, 181, 181);
-}
-
-#code {
-    border: 1px solid rgb(184, 181, 181);
+#username, #password, #user, #code, #newPassword, #confirmPassword {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-md);
+    background: rgba(255, 255, 255, 0.8);
+    transition: var(--transition-smooth);
+    font-size: 0.95rem;
+    color: var(--text-main);
 }
 
 #texto {
-    color: gray;
-}
-
-#newPassword {
-    border: 1px solid rgb(184, 181, 181);
-}
-
-#confirmPassword {
-    border: 1px solid rgb(184, 181, 181);
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 .login-form h2 {
-    color: black;
-    font-weight: bold;
+    color: var(--text-main);
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 .form-label {
-    font-weight: bold;
-
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .input-field {
-    height: 50px;
+    height: 52px;
+    padding-left: 1rem;
 }
 
 .input-group {
@@ -65,63 +67,98 @@
     width: 100%;
 }
 
-.input-group-text {
-    background-color: #fff;
-    border-left: none;
-    cursor: pointer;
-}
-
-.input-group-text i {
-    color: #07C158;
-}
-
 .btn-primary {
-    background-color: #07C158;
-    border-color: #07C158;
-    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #06a348 100%);
+    border: none;
+    height: 52px;
     font-size: 1rem;
-    font-weight: bold;
-    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-radius: 26px;
+    box-shadow: 0 4px 14px 0 rgba(7, 193, 88, 0.3);
+    transition: var(--transition-smooth);
 }
 
 .btn-primary:hover {
-    background-color: #06a348;
-    border-color: #06a348;
+    background: linear-gradient(135deg, #06a348 0%, #05923f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(7, 193, 88, 0.4);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
 }
 
 .btn-link {
-    color: #07C158;
-    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition-smooth);
 }
 
 .btn-link:hover {
-    color: #06a348;
+    color: var(--primary-hover);
     text-decoration: underline;
 }
 
 .login-image {
-    background-image: url('./imgs/equo.png');
+    background-image: linear-gradient(to right, rgba(236, 253, 245, 0.2), rgba(0, 0, 0, 0.15)), url('./imgs/equo.png');
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 60%;
+    position: relative;
+}
+
+.login-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(7, 193, 88, 0.1) 0%, rgba(30, 41, 59, 0.3) 100%);
+    pointer-events: none;
 }
 
 .logo {
-    width: 250px;
+    width: 180px;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+    transition: var(--transition-smooth);
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .eye-icon {
     position: absolute;
     top: 50%;
-    right: 15px;
-    font-size: 1.25rem;
-    color: #07C158;
+    right: 18px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: var(--primary-color);
     cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .eye-icon:hover {
-    color: #05a34d;
+    color: var(--primary-hover);
+    transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .login-form {
+        width: 100%;
+        padding: 2rem;
+    }
+    .login-image {
+        display: none;
+    }
 }
